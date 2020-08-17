@@ -10,10 +10,7 @@ body {
   padding: 0;
   margin: 0;
 	background: #e8e9e9;
-}
-
-.grid {
-	margin: 45px auto;
+  text-align: center;
 }
 
 /*** Grid Layout ***/
@@ -21,4 +18,5 @@ body {
 .grid {
   max-width: 800px;
   display: grid;
+  margin: 45px auto;
 }
