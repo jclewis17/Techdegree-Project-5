@@ -13,21 +13,35 @@ body {
   text-align: center;
 }
 
+.top-text {
+  font-family: 'Fredericka the Great', cursive;
+}
+
 header {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 input[type="search"] {
-  width: 300px;
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  margin: auto;
+}
+
+::placeholder {
+  text-align: left;
+  padding-left: 10px;
 }
 
 /*** Grid Layout ***/
 
 .gallery {
-  max-width: 800px;
+  max-width: 1000px;
   display: grid;
-  margin: 45px auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 200px 200px;
   grid-gap: 25px;
 }
